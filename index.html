@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troxity</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0712;
+      --panel: #140b24;
+      --purple: #8b5cf6;
+      --purple-soft: #a78bfa;
+      --text: #e9e6f2;
+      --muted: #a39bbf;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #1a0f33, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--panel), #0f081c);
+      border: 1px solid rgba(139, 92, 246, 0.2);
+      border-radius: 16px;
+      padding: 3rem;
+      max-width: 600px;
+      width: 90%;
+      box-shadow: 0 0 60px rgba(139, 92, 246, 0.15);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: var(--purple-soft);
+    }
+
+    .tagline {
+      margin-top: 0.5rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--purple), transparent);
+      margin: 2rem 0;
+      opacity: 0.6;
+    }
+
+    .about {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      background: rgba(139, 92, 246, 0.1);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      color: var(--purple-soft);
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    .links a:hover {
+      background: rgba(139, 92, 246, 0.25);
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Troxity</h1>
+    <div class="tagline">games · ideas · low-key experiments</div>
+
+    <div class="divider"></div>
+
+    <div class="about">
+      This is a personal space.<br><br>
+      No algorithm, no pressure — just a quiet corner of the internet where I keep
+      things I care about: games, thoughts, experiments, and whatever I’m building
+      or thinking about right now.
+    </div>
+
+    <div class="links">
+      <a href="#">Steam</a>
+      <a href="#">Discord</a>
+      <a href="#">GitHub</a>
+      <a href="#">Notes</a>
+    </div>
+
+    <footer>
+      © 2026 · Troxity
+    </footer>
+  </div>
+
+</body>
+</html>
